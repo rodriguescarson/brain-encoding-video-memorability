@@ -3,7 +3,7 @@ name = "neurotwin"
 version = "0.1.0"
 description = "Predictions-only identifiability audit of TRIBE v2 per-subject brain twins"
 requires-python = ">=3.9"
-license = { text = "CC-BY-NC-4.0" }
+license = { text = "MIT" }
 dependencies = [
     "numpy>=1.24",
     "scipy>=1.10",
