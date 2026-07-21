@@ -1,8 +1,8 @@
 # Brain-encoding features for video memorability
 
 Analysis code for the paper *It Depends on the Dataset: When a Brain-Encoding Model's
-Predicted Responses Beat Their Visual Backbone for Video Memorability*
-([arXiv:2607.16292](https://arxiv.org/abs/2607.16292)).
+Predicted Responses Beat Their Visual Backbone for Video Memorability*, currently under
+review. Author and preprint details are withheld for anonymous review.
 
 The paper asks whether the **predicted** fMRI responses of a brain-encoding model (TRIBE v2)
 are a useful feature representation for forecasting short-term video memorability, compared
@@ -49,20 +49,9 @@ extraction in `analysis/`, and point the manifests in `configs/` at your local c
 
 ## Citing this work
 
-```bibtex
-@article{rodrigues2026dataset,
-  title  = {It Depends on the Dataset: When a Brain-Encoding Model's Predicted Responses
-            Beat Their Visual Backbone for Video Memorability},
-  author = {Rodrigues, Carson},
-  year   = {2026},
-  eprint = {2607.16292},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CV},
-  doi    = {10.48550/arXiv.2607.16292}
-}
-```
+Withheld for anonymous review.
 
 ## Licence
 
-Code is released under the MIT Licence (see `LICENSE`). The licence covers this code only,
+Code is released under the MIT Licence (see `LICENSE`; copyright holder withheld for review). The licence covers this code only,
 not the datasets, which remain under their own terms.
