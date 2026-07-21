@@ -1,0 +1,12 @@
+stimulus_id,video_path,score,split
+# Manifest for the neuroforecasting pilot. One row per labeled clip.
+#   stimulus_id : unique id (any string)
+#   video_path  : path to the clip IN COLAB (e.g. /content/memento/videos/00001.mp4)
+#   score       : short-term memorability in [0,1] (Memento10k "mem_score")
+#   split       : train | val | test  (used later; the pilot just needs labels)
+# Get Memento10k by requesting access at http://memento.csail.mit.edu/ (official code:
+# github.com/cfosco/memento_keras). Build this CSV from its metadata json:
+#   id->filename and id->mem_score, written one row per clip. ~500-1000 rows is enough to pilot.
+# Example rows (replace with real Memento10k clips + scores):
+memento_00001,/content/memento/videos/00001.mp4,0.842,train
+memento_00002,/content/memento/videos/00002.mp4,0.713,train

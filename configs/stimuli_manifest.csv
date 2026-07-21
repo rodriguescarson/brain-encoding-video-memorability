@@ -1,0 +1,9 @@
+stimulus_id,domain,source,url_or_path,duration_s,sha256
+friends_s01e01_seg01,movie,cneuromod_friends,TODO_local_path,60,TODO
+friends_s01e02_seg01,movie,cneuromod_friends,TODO_local_path,60,TODO
+movie10_bourne_seg01,movie,cneuromod_movie10,TODO_local_path,60,TODO
+movie10_wolf_seg01,movie,cneuromod_movie10,TODO_local_path,60,TODO
+podcast_lupe_seg01,podcast,cneuromod_petitprince,TODO_local_path,60,TODO
+podcast_lupe_seg02,podcast,cneuromod_petitprince,TODO_local_path,60,TODO
+silent_movie10_bourne_seg01,silent,derived_video_only,TODO_local_path,60,TODO
+silent_movie10_wolf_seg01,silent,derived_video_only,TODO_local_path,60,TODO

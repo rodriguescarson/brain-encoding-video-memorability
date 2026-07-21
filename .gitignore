@@ -1,0 +1,8 @@
+# Datasets and derived arrays are NOT redistributable. See README.
+data/
+*.npz
+*.mp4
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/

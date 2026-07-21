@@ -1,0 +1,28 @@
+# RQ1 experiment configuration.
+# Used by analysis/*.py when NOT running with --demo.
+
+# Pinned model identity for reproducibility. Fill commit hash after Phase 0.
+model:
+  hf_id: facebook/tribev2
+  revision: null            # TODO: pin to a specific commit SHA once confirmed
+  surface: fsaverage5       # ~20484 vertices
+
+# Where the remote extractor wrote per-(subject, stimulus) predictions + index.json.
+predictions_dir: data/predictions
+
+# Temporal reduction applied to each (n_timesteps, n_vertices) prediction.
+# one of: mean | std | meanstd   (see neurotwin.io.REDUCERS)
+reducer: mean
+
+# Analysis hyperparameters (overridable on the CLI).
+fingerprint:
+  n_splits: 20
+  n_perm: 200
+  n_boot: 500
+
+# Subjects + stimuli are defined in subjects.yaml and stimuli_manifest.csv.
+subjects_file: configs/subjects.yaml
+stimuli_file: configs/stimuli_manifest.csv
+
+# Reproducibility
+seed: 0

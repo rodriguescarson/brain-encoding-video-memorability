@@ -1,0 +1,23 @@
+# Subjects to sweep. TRIBE v2 ships per-subject "Subject Blocks" for the subjects it was
+# trained on, plus an unseen-subject layer for zero-shot generalization.
+#
+# Phase 0 MUST confirm (a) the exact identifier the API expects and (b) how to pass it to
+# predict(). Until then these are placeholders matching the CNeuroMod naming used by the
+# Algonauts 2025 study. Edit after the Phase-0 probe.
+
+# Subjects with a trained per-subject block (CNeuroMod core subjects).
+trained:
+  - sub-01
+  - sub-02
+  - sub-03
+  - sub-04
+  - sub-05
+  - sub-06
+
+# Optionally include zero-shot/unseen subjects to contrast trained vs. generalized twins.
+unseen: []
+
+# How the model selects a subject at inference. Filled in Phase 0.
+# Examples we will probe for: a `subject=` kwarg on predict(), a model.set_subject(id),
+# or a subject column in the events dataframe.
+selection_mechanism: TODO_confirm_in_phase0
