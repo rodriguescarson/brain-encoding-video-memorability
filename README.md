@@ -23,29 +23,47 @@ The answer is dataset-dependent. Within Memento10k the backbone wins (Spearman 0
 | `scripts/` | manifest construction helper |
 | `tests/` | unit tests |
 
+## Data: predicted-response arrays
+
+The derived feature arrays are released so the forecasts reproduce without re-running the
+feature extraction:
+
+- **GitHub Release:** [`v1.0-data`](https://github.com/rodriguescarson/brain-encoding-video-memorability/releases/tag/v1.0-data)
+- **Zenodo (citable DOI):** [10.5281/zenodo.21532633](https://doi.org/10.5281/zenodo.21532633)
+
+They contain the TRIBE v2 predicted cortical responses and the V-JEPA2 backbone embeddings
+for the VideoMem (820) and Memento10k (499) clips, each stored as `stim_ids` plus float32
+`X` features. They carry **no memorability scores and no videos**. InterDigital granted
+written approval to share these derived arrays for research use, on the condition that the
+VideoMem database and its scores are not distributed. Download the arrays into
+`data/predictions/` and align them to the target scores by `stim_ids` (you supply the scores
+from the datasets, see below).
+
 ## What is NOT in this repository, and why
 
-**The source videos and memorability scores are not redistributed**, and neither are the
-predicted-response arrays derived from them.
+**The source videos and the memorability scores are not redistributed.** The derived
+predicted-response arrays are released (see the section above); the raw datasets are not.
 
 - **VideoMem** is distributed by InterDigital under a licence stating that, without their
   prior written approval, the database, software, and materials "shall not be further
   distributed, published, copied, or disseminated in any way or form whatsoever", and may not
-  be modified. Derived arrays fall under that restriction. Request access at
-  <https://www.interdigital.com/data_sets/movie-memorability-dataset>.
+  be modified. Request access from InterDigital.
 - **Memento10k** is available on request from MIT at <http://memento.csail.mit.edu/>.
 - **TRIBE v2** weights are public under CC BY-NC-4.0; **V-JEPA2** is its released visual
   backbone.
 
 To reproduce the numbers, obtain both datasets under their own terms, run the feature
-extraction in `analysis/`, and point the manifests in `configs/` at your local copies.
+extraction in `analysis/` (or download the released arrays above), and point the manifests
+in `configs/` at your local copies.
 
-## Dataset citation required by the VideoMem licence
+## VideoMem dataset citation
 
-> The dataset was provided by InterDigital and is described in the following publication:
-> R. Cohendet, K. Yadati, N. Q. Duong and C.-H. Demarty. Annotating, understanding, and
-> predicting long-term video memorability. In Proceedings of the ICMR 2018 Conference,
-> Yokohama, Japan, June 11-14, 2018.
+VideoMem was provided by InterDigital and is described in R. Cohendet, C.-H. Demarty,
+N. Q. K. Duong and M. Engilberge, *VideoMem: Constructing, Analyzing, Predicting Short-Term
+and Long-Term Video Memorability*, ICCV 2019. The same group's ICMR 2018 paper (R. Cohendet,
+K. Yadati, N. Q. Duong and C.-H. Demarty, *Annotating, Understanding, and Predicting
+Long-term Video Memorability*, doi 10.1145/3206025.3206056) describes the annotation of a
+separate dataset, MovieMem.
 
 ## Citing this work
 
